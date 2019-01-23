@@ -1,0 +1,16 @@
+.filterBar {
+  border: solid 1px #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .filterBar {
+    flex-direction: row
+  }
+}
+
+.filterSelect {
+  flex: 1;
+  margin: 10px;
+}

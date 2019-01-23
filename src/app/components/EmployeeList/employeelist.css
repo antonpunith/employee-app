@@ -1,0 +1,10 @@
+
+@media (min-width: 768px) {
+  .employee-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .employee-list .employee {
+    width: 50%
+  }
+}

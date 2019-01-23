@@ -1,0 +1,9 @@
+.name-input {
+  border: solid 1px #aaa;
+  padding: 10px;
+}
+
+.name-input:focus {
+  border-color: #999;
+  outline: none;
+}

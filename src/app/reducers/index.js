@@ -1,9 +1,6 @@
 import { combineReducers } from 'redux';
+import filters from './filter';
+import employees from './employees';
+import details from './details';
 
-import employeeData from './employees.json';
-
-const employeeReducer = () => ({
-  employees: employeeData,
-});
-
-export default combineReducers({ employeeReducer });
+export default combineReducers({ employees, filters, details });

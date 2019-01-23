@@ -1,0 +1,25 @@
+.modalContainer{
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.modalOverlay {
+  background-color: #000;
+  background-color: rgba(0,0,0,0.5);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 20px;
+}

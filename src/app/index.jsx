@@ -1,16 +1,17 @@
 import React from 'react';
 import './app.css';
 import { connect } from 'react-redux';
-import List from './components/List';
+import FilterEmployees from './components/FilterEmployees';
+import * as actions from './actions';
 
 const App = (props) => {
   return (
     <div className="container">
-      <List {...props} />
+      <FilterEmployees {...props} />
     </div>
   );
 };
 
-const mapStateToProps = state => ({ ...state.employeeReducer });
+const mapStateToProps = state => ({ ...state });
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, actions)(App);
