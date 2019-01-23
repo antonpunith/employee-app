@@ -1,12 +1,15 @@
 import React from 'react';
 import './app.css';
 import { connect } from 'react-redux';
+import List from './components/List';
 
-const App = () => (
-  <div className="container">
-    Hello from react
-  </div>
-);
+const App = (props) => {
+  return (
+    <div className="container">
+      <List {...props} />
+    </div>
+  );
+};
 
 const mapStateToProps = state => ({ ...state.employeeReducer });
 
